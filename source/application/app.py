@@ -163,6 +163,7 @@ class XHS:
 
     def __extract_video(self, container: dict, data: Namespace):
         container["下载地址"] = self.video.get_video_link(data)
+        container["时长"] = self.video.get_video_duration(data)
         container["动图地址"] = [
             None,
         ]

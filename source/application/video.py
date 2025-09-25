@@ -18,3 +18,16 @@ class Video:
             if (t := data.safe_extract(".".join(cls.VIDEO_LINK)))
             else []
         )
+
+    VIDEO_DURATION = (
+        "video",
+        "media",
+        "video",
+        "duration",
+    )
+    @classmethod
+    def get_video_duration(cls, data: Namespace) -> int:
+        if (t := data.safe_extract(".".join(cls.VIDEO_DURATION))):
+            return int(t)
+        return 0
+
