@@ -1,6 +1,6 @@
 [project]
 name = "XHS-Downloader"
-version = "2.6"
+version = "2.7"
 description = "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具：提取账号发布、收藏、点赞、专辑作品链接；提取搜索结果作品、用户链接；采集小红书作品信息；提取小红书作品下载地址；下载小红书无水印作品文件"
 authors = [
     { name = "JoeanAmier", email = "yonglelolu@foxmail.com" },
@@ -9,19 +9,19 @@ readme = "README.md"
 license = "GPL-3.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "aiofiles>=24.1.0",
+    "aiofiles>=25.1.0",
     "aiosqlite>=0.21.0",
-    "click>=8.1.8",
-    "emoji>=2.14.1",
-    "fastapi>=0.115.9",
-    "fastmcp>=2.10.5",
+    "click>=8.3.0",
+    "emoji>=2.15.0",
+    "fastapi>=0.121.0",
+    "fastmcp>=2.13.0",
     "httpx[socks]>=0.28.1",
-    "lxml>=5.3.1",
-    "pyperclip>=1.9.0",
-    "pyyaml>=6.0.2",
+    "lxml>=6.0.2",
+    "pyperclip>=1.11.0",
+    "pyyaml>=6.0.3",
     "rookiepy>=0.5.6",
-    "textual>=3.1.0",
-    "uvicorn>=0.34.0",
+    "textual>=6.5.0",
+    "uvicorn>=0.38.0",
 ]
 
 [project.urls]
