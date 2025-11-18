@@ -47,4 +47,17 @@ class Video:
         if (t := data.safe_extract(".".join(cls.VIDEO_DURATION))):
             return int(t)
         return 0
+    
+    # 预览封面地址
+    PREVIEW_COVER_LINK = (
+        "imageList[0]",
+        "urlPre",
+    )
+    @classmethod
+    def get_preview_cover_link(cls, data: Namespace) -> list:
+        return (
+             Html.format_url(f"{t}")
+            if (t := data.safe_extract(".".join(cls.PREVIEW_COVER_LINK)))
+            else ''
+        )
 

@@ -165,6 +165,7 @@ class XHS:
         container["下载地址"] = self.video.get_video_link(data)
         container["直链地址"] = self.video.get_video_direct_link(data)
         container["时长"] = self.video.get_video_duration(data)
+        container["预览封面地址"] = self.video.get_preview_cover_link(data)
         container["动图地址"] = [
             None,
         ]
